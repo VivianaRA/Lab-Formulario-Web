@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Formulario Web</title>
+</head>
+<body>
+<div>
+	<form>
+	<h1>Llena tus Datos!</h1>
+	 <p><input type="text" id="nombre"> Nombre</p> 
+     <p><input type="text" id="apellido"> Apellido</p>
+     <p><input type="text" id="edad"> Edad</p>
+     <p><button type="button" onclick="function_name()">Enviar</button></p>
+	</form>
+</div>
+<div>
+	<p id="mostrarnombre"></p>
+	<p id="mostrarapellido"></p>
+	<p id="mostraredad"></p>
+</div>
+	<h2>Resultado</h2>
+	<script type="text/javascript">
+		function function_name() {
+			var mostrarnombre=document.getElementById("nombre").value;
+			document.getElementById("mostrarnombre").innerHTML=mostrarnombre;
+			var mostrarapellido=document.getElementById("apellido").value;
+			document.getElementById("mostrarapellido").innerHTML=mostrarapellido;
+			var mostrarn=document.getElementById("edad").value;
+			document.getElementById("mostraredad").innerHTML=mostraredad;
+		}
+	</script>
+</body>
+</html>
